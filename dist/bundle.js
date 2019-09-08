@@ -107,8 +107,8 @@ Object(_add_image__WEBPACK_IMPORTED_MODULE_1__["default"])();
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
 
 
 class helloWorldButton {
@@ -156,7 +156,7 @@ if (content.locals) {
 
 exports = module.exports = __webpack_require__(4)(false);
 // Module
-exports.push([module.i, ".button {\n    background-color: forestgreen;\n    color: white;\n}", ""]);
+exports.push([module.i, ".button {\n  background-color: red;\n  color: white; }\n", ""]);
 
 
 /***/ }),
