@@ -1,5 +1,5 @@
 import HelloWorldButton from "./components/hello-world-button/hello-world-button";
-import addImage from "./add-image"
+import addImage from "./components/lion-image/lion-image"
 import Header from "./components/header/header"
 
 const helloWorldButton = new HelloWorldButton();

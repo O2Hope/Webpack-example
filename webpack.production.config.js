@@ -4,9 +4,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlwebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        'hello': './src/hello.js',
+        'lion': './src/lion.js'
+    },
     output: {
-        filename: 'bundle.[contenthash].js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, "./dist"),
         publicPath: ''
     },
@@ -56,7 +59,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'styles.[contenthash].css'
+            filename: '[name].[contenthash].css'
         }),
         new CleanWebpackPlugin(),
         new HtmlwebpackPlugin({
