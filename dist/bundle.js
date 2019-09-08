@@ -94,12 +94,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 
 
-
-const helloWorlfButton = new _components_hello_world_button_hello_world_button__WEBPACK_IMPORTED_MODULE_0__["default"]();
-
+var helloWorlfButton = new _components_hello_world_button_hello_world_button__WEBPACK_IMPORTED_MODULE_0__["default"]();
 helloWorlfButton.render();
 Object(_add_image__WEBPACK_IMPORTED_MODULE_1__["default"])();
-
 
 /***/ }),
 /* 1 */
@@ -109,22 +106,41 @@ Object(_add_image__WEBPACK_IMPORTED_MODULE_1__["default"])();
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
-class helloWorldButton {
 
-    render() {
-        const button = document.createElement("button");
-        button.innerHTML = "Hello world";
-        button.classList.add('button');
-        button.onclick = () => {
-            alert("Hello world!");
-        }
+var helloWorldButton =
+/*#__PURE__*/
+function () {
+  function helloWorldButton() {
+    _classCallCheck(this, helloWorldButton);
 
-        const body = document.querySelector("body");
-        body.appendChild(button);
+    this.buttonClass = "button";
+  }
+
+  _createClass(helloWorldButton, [{
+    key: "render",
+    value: function render() {
+      var button = document.createElement("button");
+      button.innerHTML = "Hello world";
+      button.classList.add(this.buttonClass);
+
+      button.onclick = function () {
+        alert("Hello world!");
+      };
+
+      var body = document.querySelector("body");
+      body.appendChild(button);
     }
-}
+  }]);
+
+  return helloWorldButton;
+}();
 
 /* harmony default export */ __webpack_exports__["default"] = (helloWorldButton);
 
@@ -553,18 +569,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Lion_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Lion_jpg__WEBPACK_IMPORTED_MODULE_0__);
 
 
-const addImage = () => {
-    const img = document.createElement('img');
-    img.alt = 'Lion';
-    img.width = 600;
-    img.src = _Lion_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;
-
-const body = document.querySelector('body');
-body.appendChild(img);
-}
+var addImage = function addImage() {
+  var img = document.createElement('img');
+  img.alt = 'Lion';
+  img.width = 600;
+  img.src = _Lion_jpg__WEBPACK_IMPORTED_MODULE_0___default.a;
+  var body = document.querySelector('body');
+  body.appendChild(img);
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (addImage);
-
 
 /***/ }),
 /* 7 */
