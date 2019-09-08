@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.2.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "react": "^16.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",

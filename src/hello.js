@@ -1,12 +1,12 @@
 import HelloWorldButton from "./components/hello-world-button/hello-world-button";
 import addImage from "./components/lion-image/lion-image"
 import Header from "./components/header/header";
-import _ from "lodash"
+import React from 'react';
 
 const helloWorldButton = new HelloWorldButton();
 const header = new Header();
 
-header.render(_.upperFirst('Hello world'));
+header.render('Hello world');
 helloWorldButton.render();
 addImage();
 

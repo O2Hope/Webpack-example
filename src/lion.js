@@ -1,9 +1,10 @@
 import Header from './components/header/header';
 import LionImage from './components/lion-image/lion-image';
-import _ from "lodash"
+import React from 'react';
+
 
 const header = new Header();
 const lionImage = new LionImage();
 
-header.render(_.upperFirst("lion"));
+header.render("Lion");
 lionImage.render();

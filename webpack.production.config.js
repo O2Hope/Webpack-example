@@ -16,7 +16,9 @@ module.exports = {
     mode: 'production',
     optimization: {
         splitChunks: {
-            chunks: "all"
+            chunks: "all",
+            minSize: 10000,
+            automaticNameDelimiter: '_'
         }
     },
     module:{
@@ -69,7 +71,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlwebpackPlugin({
             filename: 'hello.html',
-            chunks: ['hello', 'vendors~hello~lion'],
+            chunks: ['hello', 'vendors_hello'],
             title: 'Hello webpack',
             template: 'src/page-template.hbs',
             meta: {
