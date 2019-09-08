@@ -62,7 +62,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlwebpackPlugin({
             title: 'Training with webpack',
-            template: 'src/index.hbs',
+            template: 'src/page-template.hbs',
             meta: {
                 description: 'Introduction to webpack'
             }

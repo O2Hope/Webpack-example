@@ -63,8 +63,20 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new HtmlwebpackPlugin({
-            title: 'Training with webpack',
-            template: 'src/index.hbs',
+            filename: 'hello.html',
+            chunks: ['hello'],
+            title: 'Hello webpack',
+            template: 'src/page-template.hbs',
+            meta: {
+                description: 'Introduction to webpack'
+            }
+            //if we need change the filename: filename: ''
+        }),
+        new HtmlwebpackPlugin({
+            filename: 'lion.html',
+            chunks: ['lion'],
+            title: 'Lion webpack',
+            template: 'src/page-template.hbs',
             meta: {
                 description: 'Introduction to webpack'
             }
